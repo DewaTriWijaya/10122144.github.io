@@ -1,0 +1,95 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+
+<div>
+	<img src="banner.png" width="100%">
+</div>
+
+<div class="w3-bar w3-blue">
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('Profile')">Profile</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('Java')">Java</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('Kotlin')">Kotlin</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('Dart')">Dart</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('JavaScript')">JavaScript</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('TypeScript')">TypeScript</button>
+  <button class="w3-bar-item w3-button" onclick="openPemrograman('C++')">C++</button>
+
+</div>
+
+
+<div id="Home" class="w3-container pemrograman w3-animate-zoom" style="display:block">
+ <center>
+ <h1>Selamat Datang</h1>
+</div>
+
+<div id="Profile" class="w3-container pemrograman w3-animate-top" style="display:none">
+ <center>
+ <h1>Profile</h1>
+ </p>Menampilkan Tulisan atau Gambar dari atas ke bawah</p>
+</div>
+
+<div id="Java" class="w3-container pemrograman w3-animate-bottom" style="display:none">
+ <center>
+ <h1>Java</h1>
+ <img src="java.png" width="300px">
+ <p align="justify" style="text-indent: 45px;">Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. 
+ Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, 
+ yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. 
+ Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan 
+ sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. 
+ Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</p>
+</div>
+
+<div id="Kotlin" class="w3-container pemrograman w3-animate-left" style="display:none">
+ <center>
+  <h1>Kotlin</h1>
+ <img src="kotlin.png" width="300px">
+ </p>Menampilkan Tulisan atau Gambar dari kanan</p>
+</div>
+
+<div id="Dart" class="w3-container pemrograman w3-animate-right" style="display:none">
+ <center>
+ <h1>Dart</h1>
+ <img src="dart.png" width="300px">
+ </p>Menampilkan Tulisan atau Gambar dari Kiri</p>
+</div>
+
+<div id="JavaScript" class="w3-container pemrograman w3-animate-zoom" style="display:none">
+ <center>
+  <h1>JavaScript</h1>
+ <img src="javascript.png" width="300px">
+ </p>Menampilkan Tulisan atau Gambar dari Kiri</p>
+</div>
+
+<div id="TypeScript" class="w3-container pemrograman w3-animate-fading" style="display:none">
+ <center>
+ <h1>TypeScript</h1>
+ <img src="typescript.png" width="300px">
+ </p>Menampilkan Tulisan atau Gambar dari Kiri</p>
+</div>
+
+<div id="C++" class="w3-container pemrograman" style="display:none">
+ <center>
+  <h1>C++</h1>
+ <img src="c.png" width="300px">
+ </p>Memutar Tulisan atau Gambar</p>
+</div>
+
+
+<script>
+function openPemrograman(namaPemrograman) {
+ var i;
+ var x = document.getElementsByClassName("pemrograman");
+ for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+ }
+ document.getElementById(namaPemrograman).style.display = "block";
+}
+</script>
+
+</body>
+</html>
